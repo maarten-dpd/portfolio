@@ -23,6 +23,7 @@ $mailSent = mail($to, $subject, $message, $headers);
 if ($mailSent) {
   // Email verstuurd
   echo 'success';
+  echo '<script>window.history.go(-1);</script>';
 } else {
   // email niet verstuurd
   echo 'error';
