@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="website project deel2 graduaat opleiding programmeren">
+  <meta name="keywords" content="MaartenDp, De Puysseleir, CV, personal website">
+  <meta name="author" content="Maarten De Puysseleir">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/huisstijl.css">
+  <title>Contact - MaartenDP</title>
+  <link rel="shortcut icon" href="images/sun.ico" />
+  <script src="https://kit.fontawesome.com/ed01003756.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <!--navigation container-->
+    <nav class="navbar sticky-top navbar-light bg-light navbar-expand-lg">
+      <a class="navbar-brand" href="index.html"><img src="images/menubrand.png" alt="masker"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cv.html">Professioneel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="personal.html">Persoonlijk</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Projecten en samples</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="contact.html">Contacteer mij<span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--content container-->
+    <main class="container-fluid flex-fill">
+      <div class="row text-center align-items-center m-4">
+        
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6 border">
+          <h2 class="text-center">Personalia</h2>
+          <table class="table table-hover table-borderless">
+            <tbody>
+              <tr>
+                <td><i class="far fa-user"></i></td>
+                <td>Maarten</td>
+                <td>De Puysseleir</td>
+              </tr>
+              
+              <tr>
+                <td><i class="fas fa-home"></i></td>
+                <td>Ganzennest</td>
+                <td>29</td>
+              </tr>
+              <tr>
+                <td><i class="fas fa-home"></i></td>
+                <td>Mortsel</td>
+                <td>2640</td>
+              </tr>
+              <tr>
+                <td><i class="fas fa-phone"></i></td>
+                <td colspan="2">+32468119665</td>
+              </tr>
+              <tr>
+                <td><i class="far fa-envelope"></i></td>
+                <td colspan="2">maartendp@gmail.com</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-lg-3"></div>
+      </div>
+
+      <!--begin van formulier-->
+      <form action="send_form.php" method="post">
+        <div class="row m-4">
+          <div class="col-12">
+            <h2 class="text-center">Contact formulier</h2>
+  
+            <form>
+              <div class="form-group">
+                <div class="row">
+                  <div class="col-2"></div>
+                  <div class="col-8">
+                    <label for="naam" class="col text-center">
+                      voor en achternaam
+                    </label>
+                  </div>
+                  <div class="col-2"></div>
+  
+                </div>
+                <div class="row">
+                  <div class="col-2"></div>
+                  <div class="col-8">
+                    <input type="text" id="naam" class="form-control" placeholder="Voor en achternaam" required>
+                  </div>
+                  <div class="col-2"></div>
+  
+                </div>
+  
+  
+              </div>
+              <div class="form-group">
+                <div class="row">
+                  <div class="col-2"></div>
+                  <div class="col-8">
+                    <label for="email" class="col text-center">
+                      E-mail
+                    </label>
+                  </div>
+                  <div class="col-2"></div>
+                </div>
+                <div class="row">
+                  <div class="col-2"> </div>
+                  <div class="col-8">
+                    <input type="email" id="email" class="form-control" placeholder="E-mailadres" required>
+                  </div>
+                  <div class="col-2"></div>
+                </div>
+              </div>
+  
+              <div class="form-group">
+                <div class="row">
+                  <div class="col-2"> </div>
+                  <div class="col-4"><label for="selecteerSkills">selecteer hiernaast de skills waarin u geïntresseerd
+                      bent</label></div>
+                  <div class="col-4"><select multiple class="form-control" id="selecteerSkills">
+                      <option>.net</option>
+                      <option>javascript</option>
+                      <option>nog een optie</option>
+                      <option>we zien later wel</option>
+                    </select></div>
+                  <div class="col-2"> </div>
+                </div>
+              </div>
+              <div class="form-group mb-0">
+                <div class="row">
+                  <div class="col-2"></div>
+                  <div class="col-8"> <label for="commentaarEnFeedback">commentaar, vragen en/of feedback kan u hier
+                      kwijt</label></div>
+                  <div class="col-2"></div>
+  
+                </div>
+                <div class="row">
+                  <div class="col-2"></div>
+                  <div class="col-8">
+                    <textarea class="form-control" id="commentaarEnFeedback" rows="10"></textarea>
+                  </div>
+                  <div class="col-2"></div>
+                </div>
+  
+              </div>
+  
+              <div class="row m-0 pl-1">
+                <div class="col-2"></div>
+                <div class="form-check col-8 ">
+                  <input type="checkbox" class="form-check-input" id="privacydisclaimer" required>
+                  <label class="form-check-label" for="privacydisclaimer">ik geef mijn toestemming om mijn gegevens op te
+                    slaan voor later gebruik</label>
+                </div>
+                <div class="col-2"></div>
+              </div>
+              <div class="form-group m-1">
+                <div class="row">
+                  <div class="col-2"></div>
+                  <div class="col-4"><button class="btn btn-primary float-left" type="submit">verzenden</button></div>
+                  <div class="col-4"><button class="btn btn-outline-secondary float-right">Annuleren</button></div>
+                  <div class="col-2"></div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </form>
+      
+
+    </main>
+    <!--footer container-->
+    <footer class="page-footer my-2">
+      <!--container om footer in twee kolommen op te delen-->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col text-center">
+            <p>Copyright &copy; Maarten De Puysseleir - 2022</p>
+          </div>
+          <div class="col text-center">
+            <a href="https://ministryofprivacy.eu/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://ministryofprivacy.eu/" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://ministryofprivacy.eu/" target="_blank"> <i class="fab fa-instagram"></i></a>
+            <a href="https://discord.com/channels/@me" target="_blank"><i class="fab fa-discord"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
